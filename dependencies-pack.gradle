@@ -1,0 +1,76 @@
+def Pack(Closure closure) {
+    closure.delegate = dependencies
+    return closure
+}
+
+ext {
+
+    dagger = Pack {
+        implementation deps.dagger.hilt
+        kapt deps.dagger.compiler
+    }
+
+    dagger_vm = Pack {
+        implementation deps.dagger.viewmodel
+        kapt deps.dagger.vm_compiler
+    }
+
+    libraries = Pack {
+        implementation deps.libs
+    }
+
+    kotlin = Pack {
+        implementation deps.kotlin.lib
+        implementation deps.kotlin.ktx
+        implementation deps.kotlin.coroutines
+    }
+
+    view = Pack {
+        implementation deps.support.compat
+        implementation deps.support.app
+        implementation deps.support.cardView
+        implementation deps.support.recyclerView
+        implementation deps.support.design
+        implementation deps.support.material
+        implementation deps.support.constraint
+        implementation deps.support.glide
+        implementation deps.support.pagination
+    }
+
+    testing = Pack {
+        implementation deps.testing.junit
+        implementation deps.testing.junitImplementation
+        implementation deps.testing.espresso
+    }
+
+    network = Pack {
+        implementation deps.network.retrofit
+        implementation deps.network.converter
+        implementation deps.network.interceptor
+    }
+
+    lifecycle = Pack {
+        implementation deps.lifecycle.viewmodel
+        implementation deps.lifecycle.livedata
+        implementation deps.lifecycle.scope
+        implementation deps.ktx.fragment
+    }
+
+    moshi = Pack {
+        implementation deps.moshi.kotlin
+        kapt deps.moshi.codegen
+    }
+
+    navigation = Pack {
+        implementation deps.navigation.ui
+        implementation deps.navigation.fragment
+    }
+
+    firebase = Pack {
+        implementation platform(deps.firebase.bom)
+        implementation deps.firebase.analytic
+        implementation deps.firebase.auth
+        implementation deps.firebase.firestore
+    }
+
+}

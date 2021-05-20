@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <include
+        layout="@layout/item_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/user_details_iv_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/empty"
+            app:srcCompat="@drawable/placeholder_square" />
+
+        <TextView
+            android:id="@+id/user_details_tv_name"
+            style="@style/TextView.Centered.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/user_details_tv_username"
+            style="@style/TextView.Centered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/helper_username"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/user_details_tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/helper_location"
+            android:textColor="@color/white"
+            app:drawableLeftCompat="@drawable/ic_location_white" />
+
+        <TextView
+            android:id="@+id/user_details_tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/helper_company"
+            android:textColor="@color/white"
+            app:drawableLeftCompat="@drawable/ic_building_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/user_details_include_repo"
+                layout="@layout/item_user_details_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/user_details_include_gists"
+                layout="@layout/item_user_details_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/user_details_include_follower"
+                layout="@layout/item_user_details_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/user_details_include_following"
+                layout="@layout/item_user_details_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/user_details_btn_open_github"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/label_open_github"
+            android:textColor="@color/white"
+            app:backgroundTint="@android:color/darker_gray" />
+    </LinearLayout>
+
+</LinearLayout>
+

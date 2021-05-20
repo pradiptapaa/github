@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Github</string>
+    <string name="helper_name">Pradipta Priya Adyatmika</string>
+    <string name="helper_username">pradiptapaa</string>
+    <string name="hint_search_username">Search Username</string>
+    <string name="empty">empty</string>
+    <string name="label_find_github_user">Find Github User</string>
+    <string name="helper_location">Jakarta Indonesia</string>
+    <string name="helper_company">Nusantara Beta Studio</string>
+    <string name="label_open_github">Open Blog</string>
+    <string name="label_follower">Follower</string>
+    <string name="label_following">Following</string>
+    <string name="label_setting">Setting</string>
+    <string name="label_data_not_found_title">Oops, data seems empty</string>
+    <string name="label_data_not_found_description">Please try other username</string>
+    <string name="label_close">Close</string>
+    <string name="helper_repos">Repos</string>
+    <string name="helper_11">11</string>
+
+</resources>
