@@ -1,9 +1,9 @@
-package id.co.ppa_github.module.github.domain.response
+package id.co.ppa_github.core.domain.response
 
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
-import id.co.ppa_github.module.github.domain.`object`.User
+import id.co.ppa_github.core.domain.`object`.User
 
 @JsonClass(generateAdapter = true)
 data class SearchResponse(

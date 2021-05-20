@@ -1,8 +1,8 @@
 package id.co.ppa_github.framework.network
 
-import id.co.ppa_github.module.github.domain.`object`.Follower
-import id.co.ppa_github.module.github.domain.response.SearchResponse
-import id.co.ppa_github.module.github.domain.response.UserDetailsResponse
+import id.co.ppa_github.core.domain.`object`.Follower
+import id.co.ppa_github.core.domain.response.SearchResponse
+import id.co.ppa_github.core.domain.response.UserDetailsResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

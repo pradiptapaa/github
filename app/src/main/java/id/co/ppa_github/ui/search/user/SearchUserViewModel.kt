@@ -7,10 +7,10 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
+import id.co.ppa_github.core.domain.`object`.User
+import id.co.ppa_github.core.domain.parameter.SearchParameter
+import id.co.ppa_github.core.usecase.GetUsers
 import id.co.ppa_github.framework.datasource.paging.SearchPagingDataSource
-import id.co.ppa_github.module.github.domain.`object`.User
-import id.co.ppa_github.module.github.domain.parameter.SearchParameter
-import id.co.ppa_github.module.github.usecase.GetUsers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.Flow
 

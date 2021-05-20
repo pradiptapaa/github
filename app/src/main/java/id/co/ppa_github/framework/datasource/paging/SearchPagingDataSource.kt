@@ -1,9 +1,9 @@
 package id.co.ppa_github.framework.datasource.paging
 
 import androidx.paging.PagingSource
-import id.co.ppa_github.module.github.domain.`object`.User
-import id.co.ppa_github.module.github.domain.parameter.SearchParameter
-import id.co.ppa_github.module.github.usecase.GetUsers
+import id.co.ppa_github.core.domain.`object`.User
+import id.co.ppa_github.core.domain.parameter.SearchParameter
+import id.co.ppa_github.core.usecase.GetUsers
 import retrofit2.HttpException
 import java.io.IOException
 import java.io.InterruptedIOException

@@ -11,13 +11,13 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.paging.LoadState
 import id.co.ppa_github.R
+import id.co.ppa_github.core.domain.`object`.User
+import id.co.ppa_github.core.domain.parameter.SearchParameter
 import id.co.ppa_github.databinding.LayoutRvBinding
 import id.co.ppa_github.infrastructure.loadPhotoFrom
 import id.co.ppa_github.infrastructure.onTextChanged
 import id.co.ppa_github.infrastructure.setTextFrom
 import id.co.ppa_github.infrastructure.showAlertSnackbar
-import id.co.ppa_github.module.github.domain.`object`.User
-import id.co.ppa_github.module.github.domain.parameter.SearchParameter
 import id.co.ppa_github.ui.MainActivity
 import id.co.ppa_github.ui.search.user.details.SearchUserDetailsFragment.Companion.navigateFromSearchToUserDetails
 import kotlinx.coroutines.ExperimentalCoroutinesApi

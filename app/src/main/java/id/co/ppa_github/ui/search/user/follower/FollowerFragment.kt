@@ -8,10 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import id.co.ppa_github.R
+import id.co.ppa_github.core.domain.`object`.Follower
 import id.co.ppa_github.databinding.LayoutRvBinding
 import id.co.ppa_github.infrastructure.loadPhotoFrom
 import id.co.ppa_github.infrastructure.setTextFrom
-import id.co.ppa_github.module.github.domain.`object`.Follower
 import me.ibrahimyilmaz.kiel.adapterOf
 
 class FollowerFragment : Fragment() {

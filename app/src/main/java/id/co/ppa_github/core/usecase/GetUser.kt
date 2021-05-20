@@ -1,7 +1,7 @@
-package id.co.ppa_github.module.github.usecase
+package id.co.ppa_github.core.usecase
 
-import id.co.ppa_github.module.github.data.IGithubRepository
-import id.co.ppa_github.module.github.domain.parameter.UserDetailsParameter
+import id.co.ppa_github.core.data.IGithubRepository
+import id.co.ppa_github.core.domain.parameter.UserDetailsParameter
 import javax.inject.Inject
 
 class GetUser

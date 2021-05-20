@@ -4,10 +4,10 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import id.co.base.ResultOf
+import id.co.ppa_github.core.domain.`object`.UserDetails
+import id.co.ppa_github.core.domain.parameter.UserDetailsParameter
+import id.co.ppa_github.core.usecase.GetUser
 import id.co.ppa_github.di.IoDispatcher
-import id.co.ppa_github.module.github.domain.`object`.UserDetails
-import id.co.ppa_github.module.github.domain.parameter.UserDetailsParameter
-import id.co.ppa_github.module.github.usecase.GetUser
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableSharedFlow

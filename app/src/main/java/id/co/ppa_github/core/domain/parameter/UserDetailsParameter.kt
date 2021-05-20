@@ -1,4 +1,4 @@
-package id.co.ppa_github.module.github.domain.parameter
+package id.co.ppa_github.core.domain.parameter
 
 data class UserDetailsParameter(
     val username: String? = ""

@@ -1,4 +1,4 @@
-package id.co.ppa_github.module.github.domain.`object`
+package id.co.ppa_github.core.domain.`object`
 
 
 import com.squareup.moshi.Json

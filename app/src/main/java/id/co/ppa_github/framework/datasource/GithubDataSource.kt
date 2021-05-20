@@ -1,14 +1,14 @@
 package id.co.ppa_github.framework.datasource
 
+import id.co.ppa_github.core.data.IGithubDataSource
+import id.co.ppa_github.core.domain.`object`.Follower
+import id.co.ppa_github.core.domain.parameter.FollowerParameter
+import id.co.ppa_github.core.domain.parameter.FollowingParameter
+import id.co.ppa_github.core.domain.parameter.SearchParameter
+import id.co.ppa_github.core.domain.parameter.UserDetailsParameter
+import id.co.ppa_github.core.domain.response.SearchResponse
+import id.co.ppa_github.core.domain.response.UserDetailsResponse
 import id.co.ppa_github.framework.network.GithubService
-import id.co.ppa_github.module.github.data.IGithubDataSource
-import id.co.ppa_github.module.github.domain.`object`.Follower
-import id.co.ppa_github.module.github.domain.parameter.FollowerParameter
-import id.co.ppa_github.module.github.domain.parameter.FollowingParameter
-import id.co.ppa_github.module.github.domain.parameter.SearchParameter
-import id.co.ppa_github.module.github.domain.parameter.UserDetailsParameter
-import id.co.ppa_github.module.github.domain.response.SearchResponse
-import id.co.ppa_github.module.github.domain.response.UserDetailsResponse
 import javax.inject.Inject
 
 class GithubDataSource

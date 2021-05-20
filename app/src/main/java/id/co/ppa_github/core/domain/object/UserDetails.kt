@@ -1,6 +1,6 @@
-package id.co.ppa_github.module.github.domain.`object`
+package id.co.ppa_github.core.domain.`object`
 
-import id.co.ppa_github.module.github.domain.response.UserDetailsResponse
+import id.co.ppa_github.core.domain.response.UserDetailsResponse
 
 data class UserDetails(
     val userDetailsResponse: UserDetailsResponse? = UserDetailsResponse(),

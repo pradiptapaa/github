@@ -2,7 +2,7 @@ package id.co.ppa_github.ui.search.user.follower
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import id.co.ppa_github.module.github.domain.`object`.Follower
+import id.co.ppa_github.core.domain.`object`.Follower
 
 class FollowerPagerAdapter(
     fragment: Fragment,
