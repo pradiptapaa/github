@@ -1,8 +1,6 @@
-package id.co.ppa_github.ui.search.user.details
+package id.co.ppa_github.ui.user.details
 
-import id.co.ppa_github.R
 import id.co.ppa_github.databinding.LayoutUserDetailsBinding
-import id.co.ppa_github.infrastructure.setTextFrom
 
 infix fun LayoutUserDetailsBinding.setRepo(content: String?) {
     with(searchDetailsIncludeUserDetails.userDetailsIncludeRepo) {

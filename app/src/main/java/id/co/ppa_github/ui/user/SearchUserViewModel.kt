@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.search.user
+package id.co.ppa_github.ui.user
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel

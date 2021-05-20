@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.search.user.follower
+package id.co.ppa_github.ui.user.follower
 
 import android.view.View
 import id.co.ppa_github.core.domain.`object`.Follower

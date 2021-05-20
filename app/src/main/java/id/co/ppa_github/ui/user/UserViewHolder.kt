@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.search.user
+package id.co.ppa_github.ui.user
 
 import android.view.View
 import id.co.ppa_github.core.domain.`object`.User

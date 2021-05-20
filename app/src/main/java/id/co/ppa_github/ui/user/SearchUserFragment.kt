@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.search.user
+package id.co.ppa_github.ui.user
 
 import android.content.Intent
 import android.os.Bundle
@@ -19,7 +19,7 @@ import id.co.ppa_github.infrastructure.onTextChanged
 import id.co.ppa_github.infrastructure.setTextFrom
 import id.co.ppa_github.infrastructure.showAlertSnackbar
 import id.co.ppa_github.ui.MainActivity
-import id.co.ppa_github.ui.search.user.details.SearchUserDetailsFragment.Companion.navigateFromSearchToUserDetails
+import id.co.ppa_github.ui.user.details.SearchUserDetailsFragment.Companion.navigateFromSearchToUserDetails
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.collect

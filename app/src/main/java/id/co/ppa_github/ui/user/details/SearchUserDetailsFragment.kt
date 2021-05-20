@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.search.user.details
+package id.co.ppa_github.ui.user.details
 
 import android.os.Bundle
 import android.util.Log
@@ -19,12 +19,9 @@ import id.co.ppa_github.core.domain.`object`.Follower
 import id.co.ppa_github.core.domain.`object`.UserDetails
 import id.co.ppa_github.core.domain.parameter.UserDetailsParameter
 import id.co.ppa_github.databinding.LayoutUserDetailsBinding
-import id.co.ppa_github.infrastructure.loadPhotoFrom
-import id.co.ppa_github.infrastructure.openLink
-import id.co.ppa_github.infrastructure.setTextFrom
 import id.co.ppa_github.infrastructure.showAlertSnackbar
-import id.co.ppa_github.ui.search.user.SearchUserFragmentDirections
-import id.co.ppa_github.ui.search.user.follower.FollowerPagerAdapter
+import id.co.ppa_github.ui.user.SearchUserFragmentDirections
+import id.co.ppa_github.ui.user.follower.FollowerPagerAdapter
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
