@@ -2,12 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_main"
+    android:id="@+id/nav_search"
     app:startDestination="@id/searchUserFragment">
 
     <fragment
         android:id="@+id/searchUserFragment"
-        android:name="id.co.ppa_github.ui.search.user.SearchUserFragment"
+        android:name="id.co.ppa_github.ui.search.list.SearchUserFragment"
         android:label="SearchUserFragment"
         tools:layout="@layout/layout_rv">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchUserDetailsFragment"
-        android:name="id.co.ppa_github.ui.search.user.details.SearchUserDetailsFragment"
+        android:name="id.co.ppa_github.ui.search.details.SearchUserDetailsFragment"
         android:label="SearchUserDetailsFragment"
         tools:layout="@layout/layout_user_details">
         <argument

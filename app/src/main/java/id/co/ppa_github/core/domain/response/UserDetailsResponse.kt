@@ -1,15 +1,18 @@
 package id.co.ppa_github.core.domain.response
 
 
+import android.os.Parcelable
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.parcelize.Parcelize
 
 @JsonClass(generateAdapter = true)
+@Parcelize
 data class UserDetailsResponse(
     @Json(name = "avatar_url")
     val avatarUrl: String? = "",
     @Json(name = "bio")
-    val bio: Any? = Any(),
+    val bio: String? = "",
     @Json(name = "blog")
     val blog: String? = "",
     @Json(name = "company")
@@ -17,7 +20,7 @@ data class UserDetailsResponse(
     @Json(name = "created_at")
     val createdAt: String? = "",
     @Json(name = "email")
-    val email: Any? = Any(),
+    val email: String? = "",
     @Json(name = "events_url")
     val eventsUrl: String? = "",
     @Json(name = "followers")
@@ -33,7 +36,7 @@ data class UserDetailsResponse(
     @Json(name = "gravatar_id")
     val gravatarId: String? = "",
     @Json(name = "hireable")
-    val hireable: Any? = Any(),
+    val hireable: Boolean? = false,
     @Json(name = "html_url")
     val htmlUrl: String? = "",
     @Json(name = "id")
@@ -63,11 +66,11 @@ data class UserDetailsResponse(
     @Json(name = "subscriptions_url")
     val subscriptionsUrl: String? = "",
     @Json(name = "twitter_username")
-    val twitterUsername: Any? = Any(),
+    val twitterUsername: String? = "",
     @Json(name = "type")
     val type: String? = "",
     @Json(name = "updated_at")
     val updatedAt: String? = "",
     @Json(name = "url")
     val url: String? = ""
-)
+) : Parcelable

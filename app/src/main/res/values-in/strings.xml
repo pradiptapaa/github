@@ -17,5 +17,6 @@
     <string name="label_close">Tutup</string>
     <string name="helper_repos">Repos</string>
     <string name="helper_11">11</string>
+    <string name="label_favorite">Favorite</string>
 
 </resources>

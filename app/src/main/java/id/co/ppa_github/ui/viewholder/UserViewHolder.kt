@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.user
+package id.co.ppa_github.ui.viewholder
 
 import android.view.View
 import id.co.ppa_github.core.domain.`object`.User

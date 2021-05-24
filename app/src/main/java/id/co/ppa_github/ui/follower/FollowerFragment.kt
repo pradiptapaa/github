@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.user.follower
+package id.co.ppa_github.ui.follower
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +12,7 @@ import id.co.ppa_github.core.domain.`object`.Follower
 import id.co.ppa_github.databinding.LayoutRvBinding
 import id.co.ppa_github.infrastructure.loadPhotoFrom
 import id.co.ppa_github.infrastructure.setTextFrom
+import id.co.ppa_github.ui.viewholder.FollowerViewHolder
 import me.ibrahimyilmaz.kiel.adapterOf
 
 class FollowerFragment : Fragment() {

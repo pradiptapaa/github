@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.user
+package id.co.ppa_github.ui.search.list
 
 import android.content.Intent
 import android.os.Bundle
@@ -19,7 +19,8 @@ import id.co.ppa_github.infrastructure.onTextChanged
 import id.co.ppa_github.infrastructure.setTextFrom
 import id.co.ppa_github.infrastructure.showAlertSnackbar
 import id.co.ppa_github.ui.MainActivity
-import id.co.ppa_github.ui.user.details.SearchUserDetailsFragment.Companion.navigateFromSearchToUserDetails
+import id.co.ppa_github.ui.search.details.SearchUserDetailsFragment.Companion.navigateFromSearchToUserDetails
+import id.co.ppa_github.ui.viewholder.UserViewHolder
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.collect
@@ -128,7 +129,7 @@ class SearchUserFragment : Fragment() {
         SearchView(
             (context as MainActivity).supportActionBar?.themedContext ?: requireContext()
         ).also {
-            menu.findItem(R.id.action_search).actionView = it
+            menu.findItem(R.id.action_option_search).actionView = it
         }.apply {
             this.queryHint = resources.getString(R.string.hint_search_username)
             this.onTextChanged().debounce(500).onEach { text ->
@@ -144,7 +145,7 @@ class SearchUserFragment : Fragment() {
 
     private fun setOnMenuItemClicked(id: Int) {
         when (id) {
-            R.id.action_setting -> changeLanguage()
+            R.id.action_option_setting -> changeLanguage()
         }
     }
 

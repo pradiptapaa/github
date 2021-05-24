@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.user.follower
+package id.co.ppa_github.ui.follower
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

@@ -57,6 +57,24 @@ fun showAlertSnackbar(view: View, text: String, actionText: String, action: (() 
         .show()
 }
 
+fun showConfirmationSnackbar(
+    view: View,
+    text: String,
+    actionText: String,
+    action: (() -> Unit)? = null
+) {
+    Snackbar.make(view, text, Snackbar.LENGTH_INDEFINITE)
+        .setTextColor(ContextCompat.getColor(view.context, R.color.white))
+        .setBackgroundTint(ContextCompat.getColor(view.context, R.color.green)).apply {
+            setActionTextColor(ContextCompat.getColor(view.context, R.color.white))
+            setAction(actionText) {
+                this.dismiss()
+                action?.invoke()
+            }
+        }
+        .show()
+}
+
 @ExperimentalCoroutinesApi
 fun SearchView.onTextChanged(): Flow<String?> {
     return callbackFlow<String?> {
