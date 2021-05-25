@@ -2,6 +2,7 @@ package id.co.ppa_github.infrastructure
 
 import android.content.Intent
 import android.net.Uri
+import android.provider.Settings
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -99,6 +100,11 @@ infix fun View.openLink(link: String?) {
     val uri = Uri.parse(link)
     val intent = Intent(Intent.ACTION_VIEW, uri)
     setOnClickListener { context.startActivity(intent) }
+}
+
+fun View.changeLanguage() {
+    val mIntent = Intent(Settings.ACTION_LOCALE_SETTINGS)
+    this.context.startActivity(mIntent)
 }
 
 

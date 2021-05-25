@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_searchUserFragment_to_searchUserDetailsFragment"
             app:destination="@id/searchUserDetailsFragment" />
+        <action
+            android:id="@+id/action_searchUserFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchUserDetailsFragment"
@@ -23,4 +26,9 @@
             android:name="username"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="id.co.ppa_github.ui.setting.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/layout_setting" />
 </navigation>

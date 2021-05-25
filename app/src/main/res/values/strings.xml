@@ -18,5 +18,11 @@
     <string name="helper_repos">Repos</string>
     <string name="helper_11">11</string>
     <string name="label_favorite">Favorite</string>
+    <string name="label_daily_reminder_9am">Set Daily Reminder At 09.00 AM</string>
+    <string name="label_change_language">Change Language</string>
+    <string name="notif_reminder_title">Daily Reminder!</string>
+    <string name="notif_reminder_message">Don\'t forget to check your git app!</string>
+    <string name="label_favorite_list">Favorite List</string>
+
 
 </resources>

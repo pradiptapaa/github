@@ -17,6 +17,11 @@
     <string name="label_close">Tutup</string>
     <string name="helper_repos">Repos</string>
     <string name="helper_11">11</string>
-    <string name="label_favorite">Favorite</string>
+    <string name="label_favorite">Favorit</string>
+    <string name="label_change_language">Ganti Bahasa</string>
+    <string name="label_daily_reminder_9am">Pasang Pengingat Harian di jam 09:00 Pagi</string>
+    <string name="notif_reminder_title">Pengingat Harian!</string>
+    <string name="notif_reminder_message">Jangan lupa untuk cek aplikasi git-mu!</string>
+    <string name="label_favorite_list">Daftar Favorit</string>
 
 </resources>

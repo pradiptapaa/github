@@ -87,7 +87,7 @@ class FavoriteFragment : Fragment() {
     ): View {
         (requireActivity() as MainActivity)
             .supportActionBar?.apply {
-                this.title = "Favorite List"
+                this.title = getString(R.string.label_favorite_list)
                 this.show()
             }
         return binding.root

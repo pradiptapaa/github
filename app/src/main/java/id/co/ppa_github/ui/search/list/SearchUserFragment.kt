@@ -1,8 +1,6 @@
 package id.co.ppa_github.ui.search.list
 
-import android.content.Intent
 import android.os.Bundle
-import android.provider.Settings
 import android.view.*
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
@@ -20,6 +18,7 @@ import id.co.ppa_github.infrastructure.setTextFrom
 import id.co.ppa_github.infrastructure.showAlertSnackbar
 import id.co.ppa_github.ui.MainActivity
 import id.co.ppa_github.ui.search.details.SearchUserDetailsFragment.Companion.navigateFromSearchToUserDetails
+import id.co.ppa_github.ui.setting.SettingFragment
 import id.co.ppa_github.ui.viewholder.UserViewHolder
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
@@ -145,13 +144,8 @@ class SearchUserFragment : Fragment() {
 
     private fun setOnMenuItemClicked(id: Int) {
         when (id) {
-            R.id.action_option_setting -> changeLanguage()
+            R.id.action_option_setting -> SettingFragment.navigateFromSearchToSetting(binding.root)
         }
-    }
-
-    private fun changeLanguage() {
-        val mIntent = Intent(Settings.ACTION_LOCALE_SETTINGS)
-        startActivity(mIntent)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
