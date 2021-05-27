@@ -75,7 +75,7 @@ class FavoriteDetailsFragment : Fragment() {
         with(binding.searchDetailsIncludeUserDetails) {
             data?.userDetailsResponse?.let {
                 userDetailsTvUsername setTextFrom it.login
-                userDetailsTvName setTextFrom it.login
+                userDetailsTvName setTextFrom it.name
                 userDetailsTvLocation setTextFrom it.location
                 userDetailsTvCompany setTextFrom it.company
                 userDetailsIvPhoto loadPhotoFrom it.avatarUrl

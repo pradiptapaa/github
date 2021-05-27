@@ -31,7 +31,7 @@
     </androidx.cardview.widget.CardView>
 
     <include
-        layout="@layout/item_loading"
+        layout="@layout/item_loading_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
