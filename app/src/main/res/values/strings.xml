@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Github</string>
+    <string name="app_name">GitP</string>
     <string name="helper_name">Pradipta Priya Adyatmika</string>
     <string name="helper_username">pradiptapaa</string>
     <string name="hint_search_username">Search Username</string>

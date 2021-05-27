@@ -7,6 +7,8 @@
     <string name="label_data_not_found_description">Please try other username</string>
     <string name="appwidget_text">GitP Favorites</string>
     <string name="empty_text">No Data</string>
+    <string name="label_app_name">GitP</string>
+    <string name="label_stand_alone_version">Stand-Alone Version</string>
 
 
 </resources>

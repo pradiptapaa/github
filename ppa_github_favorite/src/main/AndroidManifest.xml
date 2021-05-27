@@ -29,13 +29,15 @@
                 android:resource="@xml/git_p_widget_info" />
         </receiver>
 
-        <activity android:name=".ui.MainActivity">
+        <activity android:name="id.co.ppa_github.ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.MainActivity" />
 
         <service
             android:name="id.co.ppa_github_favorite.widget.GitPWidgetService"

@@ -1,5 +1,7 @@
 package id.co.ppa_github_favorite.ui
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +21,13 @@ import me.ibrahimyilmaz.kiel.adapterOf
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        fun startActivity(context: Context) {
+            val intent = Intent(context, MainActivity::class.java)
+            context.startActivity(intent)
+        }
+    }
 
     private val binding: LayoutRvBinding by lazy {
         LayoutRvBinding.inflate(layoutInflater)

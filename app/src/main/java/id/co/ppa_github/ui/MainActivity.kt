@@ -1,5 +1,7 @@
 package id.co.ppa_github.ui
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
@@ -10,6 +12,13 @@ import id.co.ppa_github.databinding.LayoutBottomNavigationBinding
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        fun startActivity(context: Context) {
+            val intent = Intent(context, MainActivity::class.java)
+            context.startActivity(intent)
+        }
+    }
 
     private val binding: LayoutBottomNavigationBinding by lazy {
         LayoutBottomNavigationBinding.inflate(layoutInflater)
