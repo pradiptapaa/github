@@ -1,4 +1,4 @@
-package id.co.ppa_github.ui.splash
+package id.co.ppa_github_favorite.ui.splash
 
 import android.os.Bundle
 import android.os.Handler

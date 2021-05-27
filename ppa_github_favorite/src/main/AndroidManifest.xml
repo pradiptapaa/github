@@ -29,7 +29,7 @@
                 android:resource="@xml/git_p_widget_info" />
         </receiver>
 
-        <activity android:name="id.co.ppa_github.ui.splash.SplashActivity">
+        <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
