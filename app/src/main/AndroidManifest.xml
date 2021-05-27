@@ -5,6 +5,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <permission
+        android:name="id.co.ppa_github.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="id.co.ppa_github.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
     <application
         android:name=".PPAGithub"
         android:icon="@mipmap/ic_gitp"
@@ -13,6 +20,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ppagithub"
         tools:ignore="AllowBackup">
+        <provider
+            android:name=".framework.provider.PPAGithubProvider"
+            android:authorities="id.co.ppa_github"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="id.co.ppa_github.READ_DATABASE"
+            android:writePermission="id.co.ppa_github.WRITE_DATABASE" />
+
         <receiver
             android:name=".framework.broadcast.AppBReceiver"
             android:enabled="true"

@@ -1,5 +1,6 @@
 package id.co.ppa_github.framework.local
 
+import android.database.Cursor
 import androidx.room.*
 import id.co.ppa_github.core.domain.`object`.UserDetails
 
@@ -15,4 +16,6 @@ interface UserDetailsDao {
     @Delete
     suspend fun removeBookmark(userDetails: UserDetails?)
 
+    @Query("SELECT * FROM user")
+    fun getProviderFavorite(): Cursor?
 }

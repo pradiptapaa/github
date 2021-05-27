@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Github Favorite (Stand-Alone)</string>
+    <string name="helper_username">pradiptapaa</string>
+    <string name="empty">empty</string>
+    <string name="label_data_not_found_title">Oops, data seems empty</string>
+    <string name="label_data_not_found_description">Please try other username</string>
+
+
+</resources>
