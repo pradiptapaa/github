@@ -22,4 +22,5 @@
     <style name="TextView.Centered.Bold">
         <item name="android:textStyle">bold</item>
     </style>
+
 </resources>

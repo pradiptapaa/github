@@ -5,6 +5,8 @@
     <string name="empty">empty</string>
     <string name="label_data_not_found_title">Oops, data seems empty</string>
     <string name="label_data_not_found_description">Please try other username</string>
+    <string name="appwidget_text">GitP Favorites</string>
+    <string name="empty_text">No Data</string>
 
 
 </resources>
