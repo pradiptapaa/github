@@ -2,6 +2,7 @@ package id.co.ppa_github.di
 
 import android.app.AlarmManager
 import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
 import android.media.RingtoneManager
 import androidx.core.app.NotificationCompat
@@ -28,8 +29,12 @@ object BReceiverModule {
 
     @Provides
     fun provideNotificationCompat(@ApplicationContext context: Context): NotificationCompat.Builder {
+        val intent = context.packageManager.getLaunchIntentForPackage("id.co.ppa_github")
+        val pendingIntent = PendingIntent.getActivity(context, 0, intent, 0)
         val alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         return NotificationCompat.Builder(context, BuildConfig.CHANNEL_NOTIF)
+            .setContentIntent(pendingIntent)
+            .setAutoCancel(true)
             .setSmallIcon(R.drawable.ic_alarm)
             .setColor(ContextCompat.getColor(context, android.R.color.transparent))
             .setVibrate(longArrayOf(1000, 1000, 1000, 1000, 1000))
