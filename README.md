@@ -1,4 +1,4 @@
-# Github - pradiptapaa.version
+# Github - pradiptapa version
 A precise code with less boilerplate and long disturbing code android application using the essence of all of my learned skills and lessons (excluding the tests) designed to be easy to understand even for the beginner. This project is using SharedFlow as its flow, a modular module Clean Architecture, Hilt as its dependency injection, ViewBinding as its layout binding, Retrofit as its REST API Client, Glide to get requested image link into the layout, BroadcastReceiver to get a notification locally, Widget showing Github user's photo, MVVM as its Architecture Pattern, Navigation-ui as its navigation, Paging 3 as its infinite scrolling, XML as its layout, SharedPreference to a temporary saving boolean state, SQLite using Room as its database, ContentProvider as its way to access database in a different module.
 
 ## Development Skills Applied
